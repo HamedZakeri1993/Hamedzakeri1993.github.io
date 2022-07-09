@@ -17,6 +17,7 @@
   </header>
 
   <body>
+    <button id = "DayNight" style="float: left;">Mode</button> 
     <ul class="nav justify-content-end">
       <li class="nav-item">
         <a class="nav-link active" aria-current="true" href="#">Home</a>
@@ -50,6 +51,23 @@
 
     <p>Email: <a href="mailto:hamed.zakeri#mail.utoronto.ca">
       hamed.zakeri#mail.utoronto.ca</a></p>
+
+
+    <script>
+      let body = document.querySelector('body');
+      document.querySelector('#DayNight').addEventListener('click',function(){
+        if (body.style.color != 'white')
+        {
+          body.style.backgroundColor = 'black';
+          body.style.color = 'white';
+        }
+        else
+        {
+          body.style.backgroundColor = 'white';
+          body.style.color = 'black';
+        }
+      });
+    </script>
 
   </body>
 
